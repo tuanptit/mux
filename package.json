@@ -14,7 +14,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "is-port-reachable": "^3.0.0",
-    "mongoose": "^4.13.20",
+    "mongoose": "^5.7.5",
     "morgan": "~1.9.1",
     "net-snmp": "^2.5.11",
     "passport": "^0.3.2",
