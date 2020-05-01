@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0105840-75de-4d2d-8b37-8f3fbc70d797" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Mux" />
+  </component>
+  <component name="ProjectId" id="1VKVXfeemfkN6VPBIywrZoPwqdL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.9.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js/core" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Monotoring\Mux\public\js\core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Monotoring\Mux\public\js\core" />
+      <recent name="D:\Monotoring\Mux\public" />
+      <recent name="D:\Monotoring\Mux\views" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0105840-75de-4d2d-8b37-8f3fbc70d797" name="Default Changelist" comment="" />
+      <created>1577001814257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577001814257</updated>
+      <workItem from="1577001824349" duration="6391000" />
+      <workItem from="1577074742016" duration="14092000" />
+      <workItem from="1577174762842" duration="638000" />
+      <workItem from="1577176651544" duration="5153000" />
+      <workItem from="1577204714897" duration="3216000" />
+      <workItem from="1577240872508" duration="8090000" />
+      <workItem from="1577281558329" duration="1211000" />
+      <workItem from="1577978015729" duration="564000" />
+      <workItem from="1578885238799" duration="5525000" />
+      <workItem from="1580178745841" duration="1504000" />
+      <workItem from="1580265590670" duration="2039000" />
+      <workItem from="1580460603620" duration="635000" />
+      <workItem from="1580527956629" duration="5691000" />
+      <workItem from="1580630536851" duration="8774000" />
+      <workItem from="1580702223910" duration="4881000" />
+      <workItem from="1580824498972" duration="3924000" />
+      <workItem from="1580873319704" duration="8188000" />
+      <workItem from="1580911094101" duration="1922000" />
+      <workItem from="1580920004792" duration="1625000" />
+      <workItem from="1580960184085" duration="10411000" />
+      <workItem from="1581091686673" duration="3794000" />
+      <workItem from="1581128069832" duration="4467000" />
+      <workItem from="1581134326319" duration="2041000" />
+      <workItem from="1581174384154" duration="5325000" />
+      <workItem from="1581255609289" duration="19287000" />
+      <workItem from="1581389159507" duration="11397000" />
+      <workItem from="1581476336797" duration="14082000" />
+      <workItem from="1581811605986" duration="1817000" />
+      <workItem from="1582206356930" duration="33000" />
+      <workItem from="1582341465096" duration="292000" />
+      <workItem from="1582379894789" duration="1223000" />
+      <workItem from="1582384887798" duration="579000" />
+      <workItem from="1582447284375" duration="10959000" />
+      <workItem from="1582511526614" duration="6366000" />
+      <workItem from="1582596948878" duration="6238000" />
+      <workItem from="1585729263851" duration="15000" />
+      <workItem from="1585757968740" duration="578000" />
+      <workItem from="1585817615109" duration="1335000" />
+      <workItem from="1585841028272" duration="4986000" />
+      <workItem from="1585882465691" duration="23893000" />
+      <workItem from="1585970390562" duration="14910000" />
+      <workItem from="1586054801370" duration="13104000" />
+      <workItem from="1586103494116" duration="289000" />
+      <workItem from="1586161254591" duration="985000" />
+      <workItem from="1586186900746" duration="2416000" />
+      <workItem from="1586357615395" duration="909000" />
+      <workItem from="1586449201751" duration="1906000" />
+      <workItem from="1586574045007" duration="1186000" />
+      <workItem from="1586595227561" duration="11729000" />
+      <workItem from="1586681643068" duration="13076000" />
+      <workItem from="1586746930380" duration="13126000" />
+      <workItem from="1586831846687" duration="5467000" />
+      <workItem from="1586839550954" duration="599000" />
+      <workItem from="1586874037036" duration="2416000" />
+      <workItem from="1586916107199" duration="3228000" />
+      <workItem from="1587004173996" duration="663000" />
+      <workItem from="1587091886625" duration="4766000" />
+      <workItem from="1587179314950" duration="2771000" />
+      <workItem from="1587217265090" duration="2108000" />
+      <workItem from="1587219992946" duration="3651000" />
+      <workItem from="1587284995012" duration="5884000" />
+      <workItem from="1587302392038" duration="7776000" />
+      <workItem from="1587351194114" duration="7201000" />
+      <workItem from="1587391584751" duration="10997000" />
+      <workItem from="1587438511750" duration="17491000" />
+      <workItem from="1587527028207" duration="1008000" />
+      <workItem from="1587611425043" duration="13688000" />
+      <workItem from="1587911280424" duration="1653000" />
+      <workItem from="1587971801013" duration="2183000" />
+      <workItem from="1587992569509" duration="4468000" />
+      <workItem from="1588000463710" duration="5676000" />
+      <workItem from="1588038512173" duration="3992000" />
+      <workItem from="1588084088129" duration="2930000" />
+      <workItem from="1588087719233" duration="6944000" />
+      <workItem from="1588219119361" duration="8083000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587302871947">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1587302871947" />
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1587288585237">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587288585237" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581477346904">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1581477346904" />
+    <state x="339" y="159" key="run.anything.popup" timestamp="1585974631684">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1585974631684" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1585925393572">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1585925393572" />
+  </component>
+</project>

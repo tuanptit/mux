@@ -1,0 +1,163 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('mux:server');
+var http = require('http');
+var snmp = require ("net-snmp");
+var async = require('async');
+var tcpPortUsed = require('tcp-port-used');
+var socket = require('socket.io');
+
+var Alarm = require('../app/model/alarm');
+var Mux = require('../app/model/mux');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+var io = socket.listen(server);
+
+
+var options = {
+  port: 162,
+  disableAuthorization: true,
+  transport: "udp4"
+};
+var callback = function (error, notification) {
+  if ( error ) {
+    console.error (error.toString());
+  } else {
+    console.log (JSON.stringify(notification, null, 2));
+  }
+};
+
+io.on('connection', function (socket) {
+  console.log('connected');
+  // emit data to client
+});
+snmp.createReceiver(options, function (error, data) {
+  var trap = [];
+  for(var i= 0; i < data.pdu.varbinds.length; i++) {
+    var item = {
+      ip: data.pdu.agentAddr,
+      oid: data.pdu.varbinds[i].oid,
+      value: data.pdu.varbinds[i].value.toString()
+    }
+    if(item.ip != null) {
+      var mAlarm = new Alarm({
+        ip_address: item.ip,
+        oid: item.oid,
+        value: item.value,
+        date: new Date().toString().substring(0, 25)
+      });
+
+      mAlarm.save(function (err) {
+        if (err) {
+          console.log(err)
+          io.sockets.emit('trap', err);
+          return;
+        } else {
+          Mux.update({
+            ip_address: mAlarm.ip_address
+          }, {
+            $push: {
+              alarms: mAlarm._id
+            }
+          }, function (err, newMux) {
+            if (err) {
+              console.log(err)
+              io.sockets.emit('trap', err);
+              return;
+            } else {
+              io.sockets.emit('trap', newMux);
+            }
+          });
+        }
+      })
+      trap.push(item);
+    }
+  }
+  console.log(trap);
+  io.sockets.emit('trap', data);
+  console.log('---------------------------')
+});
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
