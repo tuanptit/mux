@@ -2,7 +2,7 @@ $(document).ready(function () {
     var t = $("#tbl-list-alarm").DataTable({
         "retrieve": true,
         "lengthMenu": [5, 10, 50, 100],
-        "pageLength": 20,
+        "pageLength": 30,
         "scrollX": true,
         dom: 'Bfrtip',
         buttons: [{
@@ -85,7 +85,7 @@ $(document).ready(function () {
                     oid = "<span style='padding: 9px; font-size: 13px;' class='label label-success'>Buffer Alarm</span>";
                     value_data = "<span style='padding: 9px; font-size: 13px;' class='label label-danger>"+getBufferAlarm(value.value)+"</span>";
                 }
-                var date = "<span style='padding: 9px; font-size: 13px;' class='label label-default'>"+value.date+"</span>";
+                var date = "<span style='padding: 9px; font-size: 13px;' class='label label-warning'>"+value.date+"</span>";
                 if(isNaN(parseInt(value_data))) {
                     t.row.add([ip_address, oid, value_data, date]).draw(false);
                 }
