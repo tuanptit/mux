@@ -105,15 +105,6 @@
 </div>
 
 <script type="text/javascript" src="/js/core/socket.io.js"></script>
-<script>
-    $(function () {
-        var socket = io("http://localhost:3000");
-        socket.emit('trap', 'hello world!');
-        socket.on('trap', function (data) {
-            console.log(data);
-        })
-    });
-</script>
 <!-- /page container -->
 </body>
 </html>

@@ -49,6 +49,10 @@ io.on('connection', function (socket) {
 });
 snmp.createReceiver(options, function (error, data) {
   var trap = [];
+  var date_now = new Date();
+  var date = date_now.getHours()+":"+date_now.getMinutes()+":"+date_now.getSeconds()+
+      " "+date_now.getDate()+"/"+parseInt(date_now.getMonth()+1)+"/"+date_now.getFullYear();
+  console.log(date);
   for(var i= 0; i < data.pdu.varbinds.length; i++) {
     var item = {
       ip: data.pdu.agentAddr,
@@ -60,7 +64,7 @@ snmp.createReceiver(options, function (error, data) {
         ip_address: item.ip,
         oid: item.oid,
         value: item.value,
-        date: new Date().toString().substring(0, 25)
+        date: date
       });
 
       mAlarm.save(function (err) {

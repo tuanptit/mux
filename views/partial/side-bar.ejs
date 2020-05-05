@@ -32,13 +32,11 @@
     $(function () {
         var socket = io("http://localhost:3000");
         socket.on('trap', function (data) {
-            console.log(data);
-            if(data.length > 0){
+            if(data.pdu.varbinds.length > 0) {
                 $(".lobibox-btn-default[data-type|='ok']").click();
                 showNoti(3, "An error occurred. Please check the Alarm");
             }
         });
-
     });
 
     function showNoti(type, text) {

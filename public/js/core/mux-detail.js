@@ -799,8 +799,10 @@ function showNoti(type, text) {
 }
 
 function updateTime(date){
-    var up_date = new Date(date);
-    up_date.setSeconds(date.getSeconds()+1);
-    $("#time").text(up_date.toString().substring(0,25));
-    setTimeout(function(){updateTime(up_date)}, 1000);
+    var date_now = new Date(date);
+    date_now.setSeconds(date.getSeconds()+1);
+    var date = date_now.getHours()+":"+date_now.getMinutes()+":"+date_now.getSeconds()+
+        " "+date_now.getDate()+"/"+parseInt(date_now.getMonth()+1)+"/"+date_now.getFullYear();
+    $("#time").text(date);
+    setTimeout(function(){updateTime(date_now)}, 1000);
 }
